@@ -1,0 +1,89 @@
+@import "libs/reset.scss";
+@import "libs/responsive.scss";
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("./src/polices/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "anton";
+    src: url("./src/polices/Anton-Regular.ttf");
+}
+
+$textLight: #dddddd;
+$textDark: #202020;
+$primary: #333333;
+$secondary: #7e7e7e;
+
+body {
+    font-family: "comfortaa";
+    font-weight: bold;
+    background-color: $secondary;
+    display: f;
+}
+
+.navbar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.label {
+    background-color: $textLight;
+    width: 90%;
+
+    text-align: center;
+    font-family: "anton";
+    font-size: 3em;
+    overflow: hidden;
+    color: $textDark;
+}
+
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    & a {
+        width: 100%;
+        margin-top: 1em;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.5em;
+        color: $textLight;
+        text-decoration: none;
+        
+        
+        &:hover {
+            background-color: $secondary;
+            cursor: pointer;
+        }
+    }
+}
+
+.main {
+    
+    & h1 {
+        text-align: center;
+        font-size: 48px;
+        color: $textLight
+    }
+    & div{
+    }
+}
+
+@media #{$large-down} {
+    .navbar {
+    display: none;
+    }
+    .main {
+        margin-left: auto;
+    }
+}

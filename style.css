@@ -1,0 +1,115 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "comfortaa";
+  src: url("./src/polices/Comfortaa-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "anton";
+  src: url("./src/polices/Anton-Regular.ttf");
+}
+body {
+  font-family: "comfortaa";
+  font-weight: bold;
+  background-color: #7e7e7e;
+  display: f;
+}
+
+.navbar {
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.label {
+  background-color: #dddddd;
+  width: 90%;
+  text-align: center;
+  font-family: "anton";
+  font-size: 3em;
+  overflow: hidden;
+  color: #202020;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  width: 100%;
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  color: #dddddd;
+  text-decoration: none;
+}
+.links a:hover {
+  background-color: #7e7e7e;
+  cursor: pointer;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #dddddd;
+}
+@media only screen and (max-width: 1070px) {
+  .navbar {
+    display: none;
+  }
+  .main {
+    margin-left: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
