@@ -103,7 +103,7 @@ body {
   height: 100vh;
 }
 .main h1 {
-  margin-top: 100px;
+  margin: 100px;
   text-align: center;
   font-size: 48px;
   color: #dddddd;
@@ -111,14 +111,18 @@ body {
 .main section {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .skill-logo {
+  margin: 100px;
   text-align: center;
-  margin-top: 100px;
   font-family: "anton";
   font-size: 2em;
-  color: #333333;
+  color: #DDDDDD;
+}
+.skill-logo img {
+  width: 200px;
 }
 .skill-logo p {
   margin-top: 50px;
