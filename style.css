@@ -44,12 +44,12 @@ td, th {
 }
 
 @font-face {
-  font-family: "comfortaa";
-  src: url("./src/polices/Comfortaa-VariableFont_wght.ttf");
-}
-@font-face {
   font-family: "anton";
   src: url("./src/polices/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: "comfortaa";
+  src: url("./src/polices/Comfortaa-VariableFont_wght.ttf");
 }
 body {
   font-family: "comfortaa";
@@ -103,6 +103,7 @@ body {
   height: 100vh;
 }
 .main h1 {
+  font-family: "anton";
   margin: 100px;
   text-align: center;
   font-size: 48px;
@@ -117,7 +118,6 @@ body {
 .skill-logo {
   margin: 100px;
   text-align: center;
-  font-family: "anton";
   font-size: 2em;
   color: #DDDDDD;
 }
